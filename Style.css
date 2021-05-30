@@ -1,102 +1,114 @@
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: '04b 30', sans-serif;
+body {
+	font-family: '04b 30',times,serif;
+	color: #333;
+	font-size: 1.2rem;
+	line-height: 1.4em;
+	margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+h1 {
+	line-height: 1.3em;
+	font-size: 2rem;
+}
+p {
+	margin-bottom: 1.6em;
+}
+
+.container {
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.header {
+	background: #333;
+	color: white;
+	padding: 2rem 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+	.header a {
+		color:white;
+		text-decoration: none;
+	}
+
+.logo-nav-container{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.navegacion {
+	flex: 0.1 0.1 auto;
+    display: inline-flex;
+    justify-content: space-between;
     padding: 10px;
-}
-body{
-
-}
-
-li{
+    font-size: 1.2em;
+    margin-top: 0;
     list-style: none;
+    transition: all 0.4s linear;
+		}
+		.navegacion ul li a{
+			display: block;
+			padding: 0.5rem 1rem;
+
+		}
+
+		.navegacion a:hover {
+		background: #FC0412;
+		margin: 10px;
+		padding: 10px;
+		border-radius: 10px
+		}
+.logo {
+  background: #FC0412;
+  height: 50px;
+  width: 80px;
+  margin-top: 20px;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 70%;
+  border-bottom-left-radius: 10%;
+  align-items: center;
+  letter-spacing:5px;
+  font-size: 1.2em;
+  }
+.pie-pagina {
+	background: #394751;
+	font-size: 1.0em;
+	padding: 4rem 0;
+	text-align: center;
+	color: red;
 }
 
-header{
-    width: 100%;
-    display: flex;
-    background-color: #192965;
-    height: 80px;
-    align-items: center;    
+.principal{
+	padding-top: 12rem;
 }
 
-header .logo {
-    flex: 1 1 auto;
-    padding: 15px;
-    color: white;
-}
+@media only screen and (max-width: 767px){
+	.navegacion {
+		width: 100%;
+		margin-top: 1rem;
+	}
+		.navegacion ul li{
+			display: block;
+		}
+			.navegacion ul li a{
+				display: block;
+				padding: 0.5rem 1rem;
 
-header .logo .fas {
-    padding: 15px;
-    background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
-}
+				}
 
+		.navegacion a:hover {
+		background: #FC0412;
+		margin: 10px;
+		padding: 10px;
+		border-radius: 10px
+		}
 
-header .nav-header{
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px;
-    font-size: 1.5em;
-    margin-top: 10px;
-}
-
-main{    
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 50px 200px;
-}
-
-main .left{
-    width: 300px;
-    height: 600px;
-    border: black 1px solid;
-    display: flex;
-    flex-direction: column;    
-    
-}
-
-main .left a{
-    color: black;
-}
-
-main .left .opciones a, main .left .cladificacion a{
-    display: flex;
-    flex-direction: column;    
-    text-align: center;
-    font-size: 1.5em;
-    padding: 15px;    
-}
-
-main .left .opciones a:hover, main .left .clasificacion a:hover{    
-    flex-direction: column;    
-    text-align: center;
-    font-size: 1.5em;
-    padding: 15px;  
-    background-color: black;  
-    color: white;
-}
-
-main .right{
-    width: 1000px;
-    height: 1200px;
-    border: 1px black solid;    
-    margin: 0px 50px;
-}
-
-.parrafo {
-  text-align: center;
 }
