@@ -4,37 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_conocenos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="js/code.js"></script>
     <title>Poli Geek</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <div class="header-logo"></div>
-            <h1 class="kind"> <i class="fas "></i> PoliGeek </h1>
-        </div>
-        <nav class="nav-header">
-            <a href="style.html">Home</a>
-            <a href="#">News</a>            
-            <a href="#">Acerca de</a>
-        </nav>
-    </header>
-    <main>
-        <div class="left">
-            <div class="opciones">                
-                <div><a href="#s" target="contenido"> New Funkos</a></div>
-                <div><a href="#" target="contenido"> Comics </a></div>
-                <div><a href="#" target="contenido"> Update </a></div>                
-            </div>  
+    <header><img src="img/baner.png" alt=""></header>
+    <Nav id="nav">
+        <ul>
+            <li>    <a href="index.html">INICIO</a></li>
+            <li>    <a href="conocenos.html">CONOCENOS</a></li>
+            <li>    <a href="catalogue.html">CATALOGO</a></li>
+            <li alt="Carrito"></li>
+        </ul>
+    </Nav>
+    <section id="nosotros">
+        <h2>Nosotros</h2>
+        <p>Nacimos hace algunos años con la esperanza de traer alegrias y momentos a todos los que buscan algo diferente, atraves de nuestros  objetos de coleccion,
+            podemos ofrecer eso y mucho mas, contamos con varios años de experiencia en el mercado y miles de clientes felices. </p>
+  
+    </section>
+    <section id="contactanos">
+        <h1>CONTACTANOS</h1>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 
-            <hr>
-            <div class="clasificacion">
-               
-            </div>
-        </div>
-        <div class="right">
-          <p class="parrafo">IMAGEN</p>
-            <iframe src="" name="contenido" frameborder="0" width="100%" height="100%"></iframe>        
-        </div>
-    </main>
+        <form action="" method="" onsubmit="return checking(this)" name="formulario">
+
+            <label for="nombre"> Nombre:</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+            <br>
+
+            <label for="correo"> Correo:</label>
+            <br>
+            <input type="email" name="correo" id="correo" placeholder="Escribe tu correo electronico">
+
+            <br>
+            <label for="tema"> Tema:</label>
+            <br>
+            <input type="text" name="tema" id="tema" placeholder="Sobre que tema quieres hablar">
+            <br>
+
+            <label for="texto"> En que podemos ayudarte:</label>
+            <br>
+            <textarea name="texto" id="texto" placeholder="Escribe tu mensaje, minimo 6 caracteres"></textarea>
+            <br>
+            <br>
+            <button type="button" onclick="boton()" id="btenvio">Enviar</button>
+            <input type="button" value="Recargar" onclick="location.reload()"/>
+        </form>
+        
+    </section>
+    
+    <footer>
+        <br><br><br>
+        <address>POLITECNICO GRANCOLOMBIANO 2021</address>
+    </footer>
+
+    
 </body>
 </html>
