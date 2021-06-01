@@ -1,0 +1,199 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	background-color: #E6E6E6;
+    color: #101010;
+    line-height: 154%;
+    margin: 0;
+    font-family: 'system-ui', system-ui, sans-serif;
+    font-size: 81.25%;
+}
+h1{
+	line-height: 1em;
+	font-family: system-ui, system-ui, sans-serif;
+	font-size: 1.0rem;
+	height: 50px;
+	color:#041434;
+
+}
+
+.menu-icono{
+    display: none;
+ }   
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#252932;
+	margin-bottom:20px;
+}
+
+.wrapper {
+	width:90%; /* ancho de la paginasera del 90% */
+	max-width:1300px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin: auto; /* Centramos los elementos */
+	overflow: hidden; /* Eliminamos errores de float */
+}
+
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:200px;
+	float:left;
+
+}
+
+header nav {
+	float:right;
+	line-height:200px;
+
+}
+
+header nav a {
+	display:inline-block;
+	color:black;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+	border-radius: 10px;
+	background-color: white;
+
+}
+
+
+header nav a:hover {
+	
+	background:#FC0412;
+	border-radius:10px;
+}
+
+.header2 {
+	position: fixed;
+	height:100px;
+}
+
+.header2 .logo {
+	line-height:100px;
+	font-size:30px;
+}
+
+.header2 nav {
+	line-height:100px;
+}
+
+.contenido {
+	padding-top: 100px;
+}
+
+.contenido p {
+	margin-right: 2em;
+	font-family: system-ui, system-ui, sans-serif;
+}
+
+
+.p1 {
+	width: 300px;
+	height: 200px;
+	background: #FFFFFF;
+	color: #fff;
+	font-size: 30px;	
+	border: 0.5px solid #000;    
+    margin: 50px;
+    font-size: 1.0rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px;
+   
+}
+.p2 {
+	width: 300px;
+	height: 200px;
+	background: #FFFFFF;
+	color: #fff;
+	font-size: 30px;	
+	border: 0.5px solid #000;    
+    margin: 50px;
+    font-size: 1.0rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px;
+   
+   
+  
+}
+.p3 {
+    width: 300px;
+	height: 200px;
+	background: #FFFFFF;
+	color: #fff;
+	font-size: 30px;	
+	border: 0.5px solid #000;    
+    margin: 50px;
+    font-size: 1.0rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px;
+   
+   
+  
+}
+
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+  text-align: center;
+  position: fixed;
+}
+@media only screen and (max-width: 767px){
+    .menu-icono{
+        display: block;
+        cursor: pointer;
+        padding: 0.7rem 2rem;
+    }
+    .wrapper {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+        .wrapper a.show{
+            display: block;
+        }
+
+            .wrapper a{
+                display: block;
+                padding: 0.5rem 1rem;
+
+                }
+
+        .wrapper a:hover {
+        background: #FC0412;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px
+        }
+
+}
