@@ -12,12 +12,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style_catalogue.css">
+	<link rel="stylesheet" href="assets/css/Estilo.CSS">
+	<!-- <link rel="stylesheet" href="assets/css/style_catalogue.css"> -->
 	<title>Poli Geek</title>
 </head>
 
 <body>
-	<header class="header" style="position: static;">
+	<div id="header"></div>
+
+
+	<script type='text/javascript'>
+	
+		$("#header").load("header");
+		
+		</script>
+
+
+
+	<!-- <header class="header" style="position: static;">
 		<div class="container logo-nav-container">
 			<a href="#" class="logo">LOGO</a>
 			<nav class="navegacion">
@@ -28,63 +40,79 @@
 				
 			</nav>
 		</div>
-	</header>
+	</header> -->
 	<main class="principal" style="position: static;">
-		<div class="container">
+		<div class="contenedor">
 			<h1>
 				Poli Geek
 			</h1>
-			<div>
+			<div class="w-100">
+
+				<style>
+
+					.product:hover{
+					transition: 1s;
+					transform: scale(1.2);
+					z-index: 100;
+					cursor: pointer;
+					}
+
+					.product img{
+						transition: 1s;
+						min-width: 150px;
+						max-width: 200px;;
+					}
+				</style>
 				<div class="row col-12">
-					<div class="col-sm-3">
-						<img src="assets/img/AHSOKA-70.000.jpeg" alt="" width="100" height="200"><br>
+					<div class="col-sm-3 product">
+						<img src="assets/img/AHSOKA-70.000.jpeg" alt="" ><br>
 						<label for="">$70.000</label>
 					</div>
-					<div class="col-sm-3">
-						<img src="assets/img/Batman Ninja - 78.000.jpeg" alt="" width="100" height="200"><br>
+					<div class="col-sm-3 product">
+						<img src="assets/img/Batman Ninja - 78.000.jpeg" alt="" ><br>
 						<label for="">$78.000</label>
 					</div>
-					<div class="col-sm-3">
-						<img src="assets/img/CHEWBACCA - 50.000.jpeg" alt="" width="100" height="200"><br>
+					<div class="col-sm-3 product">
+						<img src="assets/img/CHEWBACCA - 50.000.jpeg" alt="" ><br>
 						<label for="">$50.000</label>
 					</div>
-					<div class="col-sm-3">
-						<img src="assets/img/Black Widow - 82.000.jpeg" alt="" width="100" height="200"><br>
+					<div class="col-sm-3 product">
+						<img src="assets/img/Black Widow - 82.000.jpeg" alt="" ><br>
 						<label for="">$82.000</label>
 					</div>
 				</div>
 				<div class="row col-12">
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/Darkside - 58.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$58.000</label>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/Darth Moul - 105.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$105.000</label>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/Flash - 59.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$59.000</label>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/Gamora - 70.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$70.000</label>
 					</div>
 				</div>
 				<div class="row col-12">
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/AHSOKA-70.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$70.000</label>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/Batman Ninja - 78.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$78.000</label>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/Golden Superwoman - 75.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$75.000</label>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 product">
 						<img src="assets/img/Groot - 57.000.jpeg" alt="" width="100" height="200"><br>
 						<label for="">$57.000</label>
 					</div>
@@ -138,11 +166,19 @@
 			</div>
 		</div>
 	</main>
-	<footer class="pie-pagina">
-		<div class="container">
-			<p>Copyright - 2021</p>
-		</div>
-	</footer>
+
+
+
+
+
+	<div id="footer"></div>
+
+
+	<script type='text/javascript'>
+	
+		$("#footer").load("footer");
+		
+		</script>
 </body>
 
 </html>

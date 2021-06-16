@@ -3,66 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style_conocenos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script defer src="js/code.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/Estilo.CSS">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?V654654849" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <title>Poli Geek</title>
 </head>
 <body>
-    <header><img src="img/baner.png" alt=""></header>
-    <Nav id="nav">
-        <ul>
-            <li>    <a href="index.html">INICIO</a></li>
-            <li>    <a href="conocenos.html">CONOCENOS</a></li>
-            <li>    <a href="catalogue.html">CATALOGO</a></li>
-            <li alt="Carrito"></li>
-        </ul>
-    </Nav>
-    <section id="nosotros">
-        <h2>Nosotros</h2>
+   
+	<div id="header"></div>
+
+
+	<script type='text/javascript'>
+	
+		$("#header").load("header.html");
+		
+		</script>
+
+
+<main class="main" >
+    <div class="content">
+    <div class="alert alert-info banner1">
+        <h2>Nosotros</h2><br><br>
         <p>Nacimos hace algunos años con la esperanza de traer alegrias y momentos a todos los que buscan algo diferente, atraves de nuestros  objetos de coleccion,
             podemos ofrecer eso y mucho mas, contamos con varios años de experiencia en el mercado y miles de clientes felices
             llorelaralalsadkalskdjkas dlaskjd ebo askdjlasdkj . </p>
-  
-    </section>
-    <section id="contactanos">
-        <h1>CONTACTANOS</h1>
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        </div>
+        </div>
+	</main>
 
-        <form action="" method="" onsubmit="return checking(this)" name="formulario">
+
+
+
+    <section id="contactanos" class="w-80">
+        <h1>CONTACTANOS</h1>
+      
+
+        <form action="" method="get" onsubmit="return checking(this)" name="formulario" class="w-80">
 
             <label for="nombre"> Nombre:</label>
             <br>
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"  class='form-control' required>
             <br>
 
             <label for="correo"> Correo:</label>
             <br>
-            <input type="email" name="correo" id="correo" placeholder="Escribe tu correo electronico">
+            <input type="email" name="correo" id="correo" placeholder="Escribe tu correo electronico" class='form-control' required>
 
             <br>
             <label for="tema"> Tema:</label>
             <br>
-            <input type="text" name="tema" id="tema" placeholder="Sobre que tema quieres hablar">
+            <input type="text" name="tema" id="tema" placeholder="Sobre que tema quieres hablar" class='form-control'>
             <br>
 
             <label for="texto"> En que podemos ayudarte:</label>
             <br>
-            <textarea name="texto" id="texto" placeholder="Escribe tu mensaje, minimo 6 caracteres"></textarea>
+            <textarea name="texto" id="texto" placeholder="Escribe tu mensaje, minimo 6 caracteres" maxlength="6" class='form-control'></textarea>
             <br>
             <br>
-            <button type="button" onclick="boton()" id="btenvio">Enviar</button>
-            <input type="button" value="Recargar" onclick="location.reload()"/>
+            <button type="button" onclick="boton()" id="btenvio" class="btn btn-info">Enviar</button>
+            <input type="button" value="Recargar" onclick="location.reload()" class="btn btn-warning"/>
         </form>
         
     </section>
     
-    <footer>
-        <br><br><br>
-        <address>POLITECNICO GRANCOLOMBIANO 2021</address>
-    </footer>
+    <div id="footer"></div>
 
+
+	<script type='text/javascript'>
+	
+		$("#footer").load("footer");
+		
+		</script>
     
 </body>
 </html>
