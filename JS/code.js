@@ -96,7 +96,7 @@ function getTema(){
 function getMsg(){  
     var confirm=false;
     var msg = document.getElementById("texto").value;
-    if(msg=="" || msg.length<6){
+    if(msg=="" || msg.length<200){
         document.getElementById("texto").focus()
         alert("introduce un mensaje para continuar");
         return confirm;

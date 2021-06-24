@@ -34,7 +34,7 @@ ul a{
 
 .navegacion{
     position: fixed;
-    background-color: #fff;
+    background-color: rgba(248,246,246,0.9);
     color: #000 !important;
     border-left:6px solid #12d7ff;
     border-top:6px solid #12d7ff;
@@ -58,13 +58,14 @@ ul a{
             display: block;
             padding: 1.6rem 1rem;
 color:#000;
-font-size: 12px;
+font-size: 18px;
+font-family: Cooper Black;
         }
 
         .navegacion a:hover {
-        background: #12d7ff;
+        background: #CEF6F5;
        text-decoration: none;
- 
+        color:rgba(8,138,8,.8);
         border-radius: 10px
         }
 
@@ -114,7 +115,7 @@ font-size: 12px;
 }
 
 .contenido-cabeza{
-    height: 400px; /*Ancho de encabezado de inicio*/
+    height: 350px; /*Ancho de encabezado de inicio*/
     width: 100%;
 }
 
