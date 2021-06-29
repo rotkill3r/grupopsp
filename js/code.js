@@ -1,5 +1,6 @@
 
-function boton(){    
+function boton(){   
+  ; 
     if(checking()){        
     document.getElementById("btenvio").innerHTML="Enviado"; 
      }   
@@ -13,13 +14,16 @@ function checking(){
 
     if(nombre=="" && correo=="" && tema=="" && mensaje==""){        
         //averiguar como cambiar el borde de color     
-        alert("Necesitas llenar los campos por favor");
+        document.getElementById("alerta").style.display = "inline-block"
      }          
     else{          
         if(getName()){            
             console.log("el nombre es correcto");
             var datoA=true;
-        }else return sent;
+        }else {
+           
+            return sent
+        }
          if(getMail()){                      
             console.log("el correo es correcto");
             var datoB=true;          
@@ -47,29 +51,44 @@ function getName(){
     var nombre = document.getElementById("nombre").value;
     if(nombre==""){        
         document.getElementById("nombre").focus()
-        alert("introduce un nombre correcto para continuar");
+    //    mostrar(document.getElementById("alerta"),document.getElementById("nombre") )
+     //   document.getElementById("alerta").style.display = "block"
+      //  document.getElementById("nombre").style.marginBottom = "0"
+      //  esperar(2)
+     //   document.getElementById("alerta").style.display = "none"
+        
+      //  alert("introduce un nombre correcto para continuar");
+        
         return confirmacion_nombre;
 
-    }else if(nombre.length<2){        
+    }else if(nombre.length<=2){        
         document.getElementById("nombre").focus()
-        alert("introduce un nombre real para continuar");
+      //  document.getElementById("alerta").style.display = "block"
+        //document.getElementById("nombre").style.marginBottom = "0"
+        
+        
+     //   alert("introduce un nombre real para continuar");
+    // mostrar(document.getElementById("alerta"),document.getElementById("nombre") )
+    
+   
         return confirmacion_nombre;
-    }
-    else {
+    } else if(nombre.length>2){
+      //  esconder(document.getElementById("alerta"),document.getElementById("nombre") )
         return confirmacion_nombre=true;    
-    }    
+    }
+      
 }
 function getMail(){
     var confirmacion_correo=false;    
     var correo = document.getElementById("correo").value;
     if(correo==""){
         document.getElementById("correo").focus()
-        alert("introduce tu correo para continuar");
+  //      alert("introduce tu correo para continuar");
         return confirmacion_correo;
     } else if(validarEmail(correo)){
           return confirmacion_correo =true;
     }else{
-        alert("introduce un correo valido")
+//alert("introduce un correo valido")
         return confirmacion_correo;
     }
 }
@@ -87,7 +106,7 @@ function getTema(){
     var tema = document.getElementById("tema").value;
     if(tema=="" || tema.length<2){
         document.getElementById("tema").focus()
-        alert("introduce un tema para continuar");
+    //    alert("introduce un tema para continuar");
         return confirmacion_tema;
     }else {
         return confirmacion_tema=true;    
@@ -98,7 +117,7 @@ function getMsg(){
     var msg = document.getElementById("texto").value;
     if(msg=="" || msg.length<6){
         document.getElementById("texto").focus()
-        alert("introduce un mensaje para continuar");
+     //   alert("introduce un mensaje para continuar");
         return confirm;
     }else {      
         
@@ -116,3 +135,11 @@ function borrarCampos(){
 }
 
 
+function esconder(x,y){
+   x.style.display = "none"
+   y.style.marginBottom = "1.1em"
+}
+function mostrar(x, y){
+    x.style.display = "block"
+    y.style.marginBottom = "0"
+ }
