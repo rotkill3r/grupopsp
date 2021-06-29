@@ -159,6 +159,7 @@ section {
 .store h1 {
     color: #004D91;
     font-weight: bold;
+    margin: 20px 0;
 }
 
 .store h4 {
