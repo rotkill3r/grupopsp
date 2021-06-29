@@ -1,2 +1,0 @@
-# grupopsp
-Trabajo Colaborativo PSP
