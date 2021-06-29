@@ -29,7 +29,6 @@ ul a{
 }
 
 
-
 /*Navegacion----------------------------------*/
 
 .navegacion{
@@ -128,7 +127,7 @@ section{
 .banner1{
 
 
-    align-items: center;
+  align-items: center;
   display: flex;
 
   justify-content: center;
@@ -146,7 +145,7 @@ section{
 .banner2:hover{
 
     transition: 0.5s ease-in-out;
-    box-shadow: 2px 2px 2px 7px #f0f0f0;
+    box-shadow: 2px 2px 2px 7px #0c58c9;
    
 }
 
@@ -169,6 +168,8 @@ section{
     padding:10%;
 }
 
+
+
 /*-------------------------Footer------------------------------------------*/
 
 .pie-pagina {
@@ -184,3 +185,4 @@ section{
 	bottom: 0;
 	
 }
+
