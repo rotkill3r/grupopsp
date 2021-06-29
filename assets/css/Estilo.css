@@ -131,6 +131,54 @@ section {
     padding:10%;
 }
 
+/*-------------------------Cart------------------------------------------*/
+
+.cart {
+    margin: 60px 0px;
+}
+
+.cart h1 {
+    color: #0c58c9;
+}
+
+.cart h5 {
+    font-weight: bold;
+    color: #000;
+}
+
+.cart .line {
+    color: #000;
+    height: 1px;
+    width: 100%;
+}
+
+.store h3 {
+    color: #004D91;
+}
+
+.store h1 {
+    color: #004D91;
+    font-weight: bold;
+}
+
+.store h4 {
+    color: #004D91;
+    font-weight: bold;
+}
+
+.store .itemback {
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid #DDDDDD;
+
+    box-shadow: 2px 5px 9px 1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 2px 5px 9px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 2px 5px 9px 1px rgba(0,0,0,0.21);
+    padding: 20px;
+    text-align: center;
+}
+
 /*-------------------------Footer------------------------------------------*/
 
 footer{
